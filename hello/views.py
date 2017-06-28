@@ -17,4 +17,7 @@ def db(request):
     greetings = Greeting.objects.all()
 
     return render(request, 'db.html', {'greetings': greetings})
+    
+def title(request):
+	return HttpResponse("apple title");
 
